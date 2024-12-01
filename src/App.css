@@ -1,0 +1,118 @@
+/* App.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* App container */
+  .App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+  }
+  
+  /* Login Form */
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #059669;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .login-form input,
+  .login-form select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    color: #374151;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-form input:focus,
+  .login-form select:focus {
+    border-color: #059669;
+    box-shadow: 0 0 4px rgba(5, 150, 105, 0.5);
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #059669;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .login-form button:hover {
+    background-color: #047857;
+  }
+  
+  /* Panels */
+  .panel-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .panel-student {
+    background-color: #dbeafe;
+    color: #1e3a8a;
+  }
+  
+  .panel-teacher {
+    background-color: #fef3c7;
+    color: #92400e;
+  }
+  
+  .panel-admin {
+    background-color: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  .panel-proctor {
+    background-color: #d1fae5;
+    color: #065f46;
+  }
+  
+  /* Add transitions for smoother appearance */
+  .panel-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
